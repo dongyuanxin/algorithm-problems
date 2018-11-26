@@ -6,9 +6,15 @@
 #include <mutex>
 #include <thread>
 
-std::mutex mtx;
-
 using namespace std;
+
+// std::mutex 本身是一个类，定义一个实例
+std::mutex mtx; 
+
+// 一般不直接使用：using namespace std;
+// using std::cin;
+// using std::cout;
+// using std::endl;
 
 class Singleton{
 public:
